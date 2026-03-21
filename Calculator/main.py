@@ -39,5 +39,8 @@ else:
     result = multiply(x, y)
     print(f"Multiplication of {x} and {y} is {result}")
   elif Operation == 4:
-    result = divide(x, y)
-    print(f"Division of {x} and {y} is {result}")
+    if y == 0:
+      print("Can't divide by zero")
+    else: 
+      result = divide(x, y)
+      print(f"Division of {x} and {y} is {result}")
